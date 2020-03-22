@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<h1>blog</h1>
+{%for blog in blog.all%}
+{{blog.title}}
+<br>
+{{blog.data}}
+<br>
+<img src='{{blog.imag.url}}' height="20%">
+
+<br>
+{{blog.text}}
+
+
+
+
+{% endfor %}
