@@ -1,13 +1,14 @@
 <h1>blog</h1>
+<a href="..">回到主页</a>
 {%for blog in blog.all%}
-{{blog.title}}
+<h2><a href="{{blog.id}}">{{blog.title}}</a></h2>
 <br>
 {{blog.data}}
 <br>
-<img src='{{blog.imag.url}}' height="20%">
+<img src='{{blog.image.url}}' height="20%">
 
 <br>
-{{blog.text}}
+{{blog.short_text}}
 
 
 
